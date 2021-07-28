@@ -1,0 +1,95 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    background-color: #264653;
+}
+.heading{
+    margin-right: 120px;
+    margin-left: 40px;
+    color: #FFFFFF;
+}
+.btn{
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px;
+    width: 168px;
+    height: 44px;
+    background: #E76F51;
+}
+.bike img{
+    width: 552px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-right: 150px;
+}
+.fetured{
+    margin-top: 64px;
+}
+.fetured p{
+    color: #E76F51;
+}
+.bikes{
+    margin-top: 120px;
+}
+.news{
+    margin-top: 165px;
+    margin-bottom: 47px;
+}
+.client{
+    margin-top: 160px;
+    margin-bottom: 52px;
+}
+.client p{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+.banker img{
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+}
+.banker-1{
+    margin-left: 35px;
+    margin-right: 35px;
+    color: #6C6C6C;
+}
+.banker-1 h6{
+    margin-top: 15px;
+    color: #23A6F0;
+}
+.banker-1 h5{
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+}
+
+
+
+
+.bike-1 img{
+    filter: grayscale(100%);
+}
+
+
+
+
+
+.fa-star.filled{
+    color: #E77C40;
+}
+.fa-star.emty{
+    color: #E77C40;
+}
+.faq{
+        margin-top: 160px;
+        margin-bottom: 112px;
+    }
+    .faq p{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
