@@ -1,14 +1,13 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.banner{
+.menu{
     background-color: #264653;
 }
-.heading{
-    margin-right: 120px;
-    margin-left: 40px;
-    color: #FFFFFF;
+header{
+    background-color: #264653 !important ;
 }
+
 .btn{
     font-size: 16px;
     line-height: 25px;
@@ -22,7 +21,7 @@ body{
     height: auto;
     margin-top: 50px;
     margin-bottom: 70px;
-    margin-right: 150px;
+    
 }
 .fetured{
     margin-top: 64px;
@@ -32,6 +31,9 @@ body{
 }
 .bikes{
     margin-top: 120px;
+}
+.bike-1 img{
+    filter: grayscale(100%);
 }
 .news{
     margin-top: 165px;
@@ -65,18 +67,6 @@ body{
     line-height: 24px;
     color: black;
 }
-
-
-
-
-.bike-1 img{
-    filter: grayscale(100%);
-}
-
-
-
-
-
 .fa-star.filled{
     color: #E77C40;
 }
@@ -92,4 +82,22 @@ body{
         font-size: 48px;
         line-height: 72px;
     }
+}
+.bike-brands{
+    margin-top: 160px;
+    margin-bottom: 112px;
+}
+.bike-brands p{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+.contact{
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+.contact p{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
 }

@@ -16,27 +16,85 @@
     <link rel="stylesheet" href="main.css">
 
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
-        <!-- banner -->
-        <section>
-            <div class="banner d-flex align-items-center">
-                <div class="heading container ml-1 px-5">
-                   <h6>Computer-controlled digital transistorized with electronic advance</h6>
-                   <h1>Honda CBR 300R</h1>
-                   <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button class="btn text-white">Purchase</button>
-                </div>
-                <div class="bike">
-                    <img src="images/header-bike.png" alt="">
-                </div>
+      <!-- nav-bar  -->
+      <nav class="menu navbar navbar-expand-lg navbar-light">
+        <div class="container justify-content-end">
+            <button class="navbar-toggler flex-row-reverse" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-row-reverse bd-highlight" id="navbarSupportedContent">
+                <button type="submit" class="btn btn-login text-white ">Login</button>
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </nav>
+      <section class="container my-5">
+                  <div class="row justify-content-between">
+                      <div class="col col-lg-5 text-white d-flex align-items-center">
+                          <div>
+                              <p class="head-p-col">Computer-controlled digital transistorized with electronic advance</p>
+                              <h1 class="font-bold mb-3">Honda CBR 300R</h1>
+                              <p class="head-p-col">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                  Velit officia
+                                  consequat
+                                  duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                              <button type="button" class="btn btn-purchase text-white" data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop">
+                                  Purchase
+                              </button>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h5 class="modal-title text-primary" id="staticBackdropLabel">Purchase The Bike</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                  aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body text-dark">
+                                             <p>Buying a new bike is a serious business: the machine you eventually opt for will carry you over hill and dale for many miles, and ideally for many years to come. So you want to make sure it’s the right one.</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary"
+                                                  data-bs-dismiss="modal">Cancle</button>
+                                              <a target="_blank" href="http://gmh-saber.wtf"><button type="button"
+                                                class="btn btn-primary" data-bs-dismiss="modal">I Agrre</button>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-lg-6 py-5 d-flex justify-content-center">
+                          <img class="img-fluid" src="images/header-bike.png" alt="">
+                      </div>
+                  </div>
+              </section>
     </header>
     <main>
         <!-- fetured bike -->
@@ -166,19 +224,228 @@
         <p>Frequently Asked <span class="text-danger text-gradient">Questions</span></p>
        </div>
        <section class="container">
-           <div>
-               <div>
-                   <img src="images/faq.png" alt="">
-               </div>
-               <div>
-                
-               </div>
-           </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-sm-6">
+            <div class="card border-0">
+              <div class="card-body">
+                <img src="images/faq.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne">
+                        What are the most important things I should know
+                        about riding a bike?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>
+                          Safety First! Always obey the rules of the road.
+                          Obey all traffic signals, signs, and laws. Get in
+                          the mindset of “driving” your bike—not just
+                          “riding” your bike. This will help you be a more
+                          focused and legally compliant bike rider.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        How can I tell if my helmet is old and I need a new
+                        one?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>
+                          Safety First! Always obey the rules of the road.
+                          Obey all traffic signals, signs, and laws. Get in
+                          the mindset of “driving” your bike—not just
+                          “riding” your bike. This will help you be a more
+                          focused and legally compliant bike rider.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour">
+                        My bike has been in storage is it safe to ride?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>
+                          Safety First! Always obey the rules of the road.
+                          Obey all traffic signals, signs, and laws. Get in
+                          the mindset of “driving” your bike—not just
+                          “riding” your bike. This will help you be a more
+                          focused and legally compliant bike rider.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree">
+                        What rules should I follow when riding my bike?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>
+                          Safety First! Always obey the rules of the road.
+                          Obey all traffic signals, signs, and laws. Get in
+                          the mindset of “driving” your bike—not just
+                          “riding” your bike. This will help you be a more
+                          focused and legally compliant bike rider.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
        </section>
+
+       <!-- Bike Brands -->
+        <div class="bike-brands text-center">
+          <p>Chose Your <span class="text-danger text-gradient">Brand Bike</span></p>
+         </div>
+       <section class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card shadow-lg border rounded-3">
+                <img src="images/hero.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">HERO</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg border rounded-3">
+                <img src="images/honda.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">HONDA</h5>
+               </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg border rounded-3">
+                <img src="images/ktm.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">KTM</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4 m-4">
+            <div class="col">
+              <div class="card shadow-lg border rounded-3">
+                <img src="images/suzuki.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">SUZUKI</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg border rounded-3">
+                <img src="images/tvs.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">TVS</h5>
+               </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg border rounded-3">
+                <img src="images/bajaj.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">BAJAJ</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="container">
+      <div class="contact text-center">
+        <p><span class="text-danger text-gradient">Contact</span> Us</p>
+       </div>
+      <form class="w-400">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div class="">
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </section>
     </main>
     <footer>
-
+     
     </footer>
+    <script src="var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+    
+    myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+    })"></script>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
